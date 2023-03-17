@@ -28,9 +28,20 @@ public class Table<E>{
 
     public <T,R> HashMap<T,R[]> groupBy(Comparable<T> value, Comparator<T> pfunc){
         HashMap<T,R[]> ret = new HashMap<>();
-        for (int i = 0; i < data.length; i++) {
 
-        }
+
+
+
+
+
+
+
+//        for (int i = 0; i < data.length; i++) {
+//            if (!ret.containsKey(value.toString()){
+//                ret.put(data[i],[i]);
+//            }
+//            pfunc.compare();
+//        }
         return ret;
     }
 

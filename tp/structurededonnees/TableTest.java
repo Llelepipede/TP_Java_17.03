@@ -61,12 +61,13 @@ public class TableTest {
 
 
 //    // Q2
-//
+
 //    @Test @Tag("Q2")
 //    public void newGroupDifferentName() {
 //        record Person(String name, int age) { }
 //        var table = Table.of(new Person("Ana", 34), new Person("Bob", 54));
 //        var group = table.groupBy(Person::name, String::compareTo);
+//        System.out.println(Person::name);
 //        assertEquals(2, group.keySize());
 //    }
 //    @Test @Tag("Q2")
