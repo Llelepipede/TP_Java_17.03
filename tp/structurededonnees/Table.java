@@ -26,7 +26,7 @@ public class Table<E>{
         return data.length;
     }
 
-    public <T,R> HashMap<T,R[]> groupBy(Comparable<T> value, Comparator<T> pfunc){
+    public <T,R> HashMap<T,R[]> groupBy(TableElemComparator<T> value, TableElemComparable<T> pfunc){
         HashMap<T,R[]> ret = new HashMap<>();
 
 
