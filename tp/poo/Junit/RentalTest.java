@@ -1,5 +1,5 @@
 
-package tp.structurededonnees;
+package tp.poo.Junit;
 
 import static org.junit.Assert.*;
 
