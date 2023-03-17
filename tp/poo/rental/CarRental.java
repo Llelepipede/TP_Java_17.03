@@ -15,19 +15,18 @@ public class CarRental {
     }
 
     public void add(Locomotion car){
+
         Objects.requireNonNull(car, "car must not be null");
         LocomotionList.add(car);
     }
     public void remove(Locomotion car){
-        System.out.println("tested");
-        Objects.requireNonNull(car, "car must not be null");
-        System.out.println("tested");
         for (int i = 0; i < LocomotionList.size(); i++) {
             if (LocomotionList.get(i).equals(car) && car.getClass() == LocomotionList.get(i).getClass()){
                 LocomotionList.remove(i);
                 return;
             }
         }
+        throw new IllegalStateException("Already connected");
     }
 
     public List<Locomotion> toSell(){
@@ -61,8 +60,6 @@ public class CarRental {
             }
         }
         return null;
-
-
     }
 }
 
