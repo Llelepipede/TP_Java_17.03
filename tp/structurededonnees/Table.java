@@ -1,10 +1,11 @@
 package tp.structurededonnees;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class Table<E> {
+public class Table<E>{
 
     private E[] data;
     private Table(E ...args){
@@ -25,11 +26,12 @@ public class Table<E> {
         return data.length;
     }
 
-    public <T,R> HashMap<T,R[]> groupBy(E Function, Function<T,R> pfunc){
-            HashMap<T,R[]> ret = new HashMap<>();
+    public <T,R> HashMap<T,R[]> groupBy(Comparable<T> value, Comparator<T> pfunc){
+        HashMap<T,R[]> ret = new HashMap<>();
+        for (int i = 0; i < data.length; i++) {
 
-            return ret;
+        }
+        return ret;
     }
-
 
 }
