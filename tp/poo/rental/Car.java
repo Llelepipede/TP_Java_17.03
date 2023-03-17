@@ -31,6 +31,15 @@ public class Car extends Locomotion {
         return 2;
     }
 
+    public Car get(){
+        return this;
+    }
+
+
+    public Boolean isPresent(){
+        return this != null;
+    }
+
     public String getModel() {
         return Model;
     }

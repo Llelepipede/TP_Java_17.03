@@ -50,16 +50,16 @@ public class CarRental {
         return ret;
     }
 
-    public Car findACarByModel(String model){
+    public  Optional<Car> findACarByModel(String model){
         for (int i = 0; i < LocomotionList.size(); i++) {
             if (LocomotionList.get(i) instanceof Car){
                 Car car = (Car) LocomotionList.get(i);
                 if (car.getModel() == model){
-                    return car;
+                    return Optional.of( car);
                 }
             }
         }
-        return null;
+        return Optional.ofNullable(null);
     }
 }
 

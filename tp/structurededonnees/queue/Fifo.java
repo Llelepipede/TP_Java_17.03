@@ -57,7 +57,6 @@ public class Fifo {
     }
 
     public void offer(Object added){
-
         Objects.requireNonNull(added);
         if (head ==data.length) {
             if (tail != 0){

@@ -120,19 +120,19 @@ public class RentalTest {
         assertFalse(toSell.contains(new Camel(currentYear - 3)));
     }
 
-//    @Test
-//    public void findACarByModel() {
-//        CarRental rental = new CarRental();
-//        rental.add(new Car("ford mustang", 2020));
-//        rental.add(new Camel(2003));
-//        assertEquals(new Car("ford mustang", 2020), rental.findACarByModel("ford mustang").get());
-//    }
+    @Test
+    public void findACarByModel() {
+        CarRental rental = new CarRental();
+        rental.add(new Car("ford mustang", 2020));
+        rental.add(new Camel(2003));
+        assertEquals(new Car("ford mustang", 2020), rental.findACarByModel("ford mustang").get());
+    }
 
-//    @Test
-//    public void findACarByModel2() {
-//        CarRental rental = new CarRental();
-//        rental.add(new Car("renault alpine", 1992));
-//        rental.add(new Camel(1992));
-//        assertFalse(rental.findACarByModel("ford mustang").isPresent());
-//    }
+    @Test
+    public void findACarByModel2() {
+        CarRental rental = new CarRental();
+        rental.add(new Car("renault alpine", 1992));
+        rental.add(new Camel(1992));
+        assertFalse(rental.findACarByModel("ford mustang").isPresent());
+    }
 }
